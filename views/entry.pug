@@ -1,0 +1,46 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width')
+    link(rel='stylesheet', href='/css/main.css')
+    title MyDiary
+  body
+    header
+      .container
+        #mydiary
+          h1
+            span.logo My
+            | Diary
+        nav
+          ul
+            li
+              a(href='/') Home
+            if(email)
+              li
+                a(href='/signout') Sign Out
+            else
+              li
+                a(href='/sign') Sign In
+            endif
+            if(email)
+              li.current
+                a(href='/entry') Message
+            endif
+              li
+                a(href='/about') About
+    section#text
+      if(email)
+         h4 Welcome, #{email.first_name}
+      if(message)
+         h4 #{message}
+      .contents
+        div
+          form.entry(method='post', action='/api/v2/entries')
+            div
+              input(name='title', type='heading', placeholder='Entry Heading')
+            div
+              textarea(type='text', name='message', placeholder='Enter personal message')
+            div
+              button.button_1(type='submit') Add
+              //button.button_1(type='submit') Modify

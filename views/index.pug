@@ -1,0 +1,57 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width')
+    link(rel='stylesheet', type='text/css', href='/css/main.css')
+    title MyDiary
+  body
+    header#branding
+      .container
+        #mydiary
+          h1
+            span.logo My
+            | Diary
+        nav
+          ul
+            li.current
+              a(href='/') Home
+            if(email)
+              li
+                a(href='/signout') Sign Out
+            else
+              li
+                a(href='/sign') Sign In
+            endif
+            if(email)
+              li.current
+                a(href='/entry') Message
+            endif
+              li
+                a(href='/about') About
+    section#details
+      if(message)
+         h4 #{message}
+      .container
+        #story
+          p.font
+          h1 MyDiary helps you pen down your personal memories.
+          p
+        aside#sidebar
+          div
+          if(email)
+            h1 Welcome, #{email.first_name}
+          else
+            h1 Create a new account
+            form.form(method='post', action='/api/v1/signup')
+              .first
+                input(name='first_name', type='text', placeholder='Enter first name...')
+              .last
+                input(name='last_name', type='text', placeholder='Enter last name...')
+              .email
+                input(name='email', type='email', placeholder='Email...')
+              div
+                input#password(type='password', name='password', placeholder='Enter password..')
+              button.button(type='submit') Sign Up
+          endif
+

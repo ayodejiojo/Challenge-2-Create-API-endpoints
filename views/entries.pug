@@ -1,0 +1,41 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width')
+    link(rel='stylesheet', href='/css/main.css')
+    title MyDiary
+  body
+    header
+      .container
+        #mydiary
+          h1
+            span.logo My
+            | Diary
+        nav
+          ul
+            li
+              a(href='/') Home
+            if(email)
+              li
+                a(href='/signout') Sign Out
+            else
+              li
+                a(href='/sign') Sign In
+            endif
+            if(email)
+              li.current
+                a(href='/entry') Message
+            endif
+              li
+                a(href='/about') About
+    section#text
+      .contents
+        h1 My Diary Entries
+        .entries
+          ul
+           if(entries)
+             each val, index in entries
+               li 
+                 a(href='/view_entry/'+index)
+                   =val.title

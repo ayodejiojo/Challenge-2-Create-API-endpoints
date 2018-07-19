@@ -1,0 +1,55 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width')
+    link(rel='stylesheet', href='./css/main.css')
+    title MyDiary
+  body
+    header#branding
+      .container
+        #mydiary
+          h1
+            span.logo My
+            | Diary
+        nav
+          ul
+            li.current
+              a(href='/') Home
+            if(email)
+              li
+                a(href='/signout') Sign Out
+            else
+              li
+                a(href='/sign') Sign In
+            endif
+            if(email)
+              li.current
+                a(href='/entry') Message
+            endif
+              li
+                a(href='/about') About
+    section#abouts
+      .container
+        article#about
+          h1 About
+          ul#list
+            li
+              h3 Mission
+              p To enable people to pen down thier personal messages.
+              p It's very secure and no one can have access to, Except the user
+            li
+              h3 Contact Details
+              p Email: ayodejiojo1923@gmail.com
+              p Phone no: 08183142355
+            li
+              h3 Contact Details
+              p
+                | Your generak ideas and feedback help us to constantly improve
+                span.logo My
+                | Diary feautures.
+          endif    
+    footer
+      p
+        span.logo My
+        | Dairy © 2018
