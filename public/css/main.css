@@ -1,0 +1,348 @@
+body{
+	font -font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.5;
+	font -size: 15px;
+	padding: 0;
+	margin: 0;
+	background-color: #f4f4f4;
+}
+/* Global*/
+
+.container{
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+}
+
+/* for entry from user*/
+.button_3{
+	border-radius: 5px;
+	height: 40px;
+	font-size: 20px;
+	padding-right: : 30px;
+	padding-left: 2px;
+	background-color:#03A9F4;
+	color: #fff;
+	margin-top: 20px;
+	width: 150px;
+}
+
+
+
+.button_1{
+	border-radius: 5px;
+	height: 40px;
+	font-size: 20px;
+	padding-right: : 30px;
+	padding-left: 2px;
+	background-color:#03A9F4;
+	color: #fff;
+	margin-top: 20px;
+	width: 80px;
+}
+
+/* General button*/
+.button{
+	border-radius: 5px;
+	height: 40px;
+	font-size: 20px;
+	padding-right: : 30px;
+	padding-left: 2px;
+	background-color:#03A9F4;
+	color: #fff;
+	margin-top: 20px;
+	width: 230px;
+}
+
+
+
+/* Header*/
+header{
+	background: #607D8B;
+	color:#fff;
+	padding-top: 30px;
+	min-height: 70px;
+	border-bottom: #03A9F4 3px solid;
+}
+
+header a{
+	text-transform: uppercase;
+	color: #fff;
+	list-style: none;
+	text-decoration: none;
+	font-size: 16px;
+	
+}
+
+header li{
+	float: left;
+	display: inline;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+header #mydiary{
+	float: left;
+
+
+}
+
+header #mydiary h1{
+	font-size: 40px;
+	margin: 0;
+	padding-bottom: 10px;
+}
+
+header nav{
+	float: right;
+	padding-top: 30px;
+}
+
+
+header .logo, header .current a{
+	color: #03A9F4;
+	font-weight: bold;
+
+}
+
+header a:hover{
+	color: #ccc;
+	font-weight: bold;
+}
+
+aside#sidebar{
+ 	float: right;
+ 	width: 30%;
+ 	margin-top: 10px;
+ }
+
+ #sidebar h1{
+ 	font-size: 30px;
+ }
+
+ #story{
+	float: left;
+	width: 65%;
+}
+
+
+/* form Sign up*/
+.form input[type="email"]{
+	margin-top: 20px;
+	height: 25px;
+	border-radius: 10px;
+	width: 200px;
+	padding:10px;
+}
+
+
+
+.form input[type="text"]{
+	margin-top: 20px;
+	height: 25px;
+	border-radius: 10px;
+	width: 200px;
+	padding:10px;
+}
+
+
+.form input[type="password"]{
+		
+	margin-top: 20px;
+	height: 25px;
+	border-radius: 10px;
+	width: 200px;
+	padding: 10px;
+}
+
+
+/* To align text to the center for sign in*/
+	
+.content {
+   position: absolute;
+
+    width: 300px;
+    height: 400px;
+
+    /* Center form on page horizontally & vertically */
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -150px;
+}
+
+
+
+
+
+/* background color for sidebar*/
+
+.form{
+	padding: 20px;
+	
+	background: #607D8B;
+	color: #fff;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/* for content in home*/
+
+#story h1{
+	padding: 40px;
+	font-size: 30px;
+	font-style: italic;
+}
+
+
+
+/* To align text to the center for Entry*/
+
+.contents {
+   position: absolute;
+
+    width: 400px;
+    height: 400px;
+
+    /* Center form on page horizontally & vertically */
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -150px;
+}
+
+
+.content h3{
+	font-size: 30px;
+}
+
+
+/* sign in */
+
+.move input[name="email"]{
+		
+	margin-top: 20px;
+	height: 25px;
+	border-radius: 10px;
+	width: 200px;
+	padding: 10px;
+	margin-bottom: 10px;
+
+}
+
+.move input[type="password"]{
+		
+	margin-top: 20px;
+	height: 25px;
+	border-radius: 10px;
+	width: 200px;
+	padding: 10px;
+}
+
+/* background color for sign in*/
+
+.move{
+	padding: 20px;
+	border-radius: 10px;
+	background: #607D8B;
+	color: #fff;
+	margin-top: 1px;
+	margin-bottom: 10px;
+}
+
+
+/* background color for Entry*/
+.entry{
+	padding: 20px;
+	border-radius: 10px;
+	background: #607D8B;
+	color: #fff;
+	margin-top: 1px;
+	margin-bottom: 10px;
+
+}
+
+
+/* Styling for form in Entry*/
+
+.entry input[type="heading"]{
+		
+	margin-top: 20px;
+	height: 25px;
+	
+	width: 150px;
+	padding: 5px;
+	margin-bottom: 10px;
+
+}
+
+
+
+section#text .entry textarea{
+	width: 80%;
+	padding: 30px;
+}
+section h4 {
+    text-align: center;
+    color: red;
+    font-size: 20px;
+}
+
+/* for the article in About*/
+article#about{
+	
+	width: 65%;
+}
+
+ul#list li{
+	list-style: none;
+	padding: 20px;
+	border:#cccccc solid 1px;
+	margin-bottom: 30px;
+	background: #e6e6e6;
+
+}
+
+
+footer .logo{
+		color: #03A9F4;
+}
+
+footer{
+
+	text-align: center;
+	position: relative;
+	padding: 5px;
+	margin-top: 100px;
+	background:#35424a; 
+	color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
